@@ -1,0 +1,29 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hall",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "7bae9db5-5098-49b0-b306-bcf73c799a85",
+  "title": "hall",
+  "webOrientation": "auto",
+  "xxteaKey": "d7eed64e-50f7-43",
+  "zipCompressJs": true
+}
