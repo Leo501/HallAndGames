@@ -25,5 +25,17 @@
   "title": "hall",
   "webOrientation": "auto",
   "xxteaKey": "d7eed64e-50f7-43",
-  "zipCompressJs": true
+  "zipCompressJs": true,
+  "wechatgame": {
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "REMOTE_SERVER_ROOT": "",
+    "subContext": "",
+    "isSubdomain": false
+  },
+  "qqplay": {
+    "orientation": "portrait",
+    "REMOTE_SERVER_ROOT": ""
+  },
+  "fb-instant-games": {}
 }

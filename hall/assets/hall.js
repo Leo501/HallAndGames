@@ -30,7 +30,7 @@ cc.Class({
 
         this._storagePath = ((jsb.fileUtils ? jsb.fileUtils.getWritablePath() : '/') + 'ALLGame/' + name);
 
-        var UIRLFILE = "http://192.168.0.133/down/remote-assets/" + name;
+        var UIRLFILE = "http://192.168.0.116/down/remote-assets/" + name;
         var filees = this._storagePath + "/peision.manifest";
         this.manifestUrl = filees;
 
@@ -63,18 +63,11 @@ cc.Class({
             }
         };
 
-
-
-
         this._am = new jsb.AssetsManager('', this._storagePath, versionCompareHandle);
 
         if (!cc.sys.ENABLE_GC_FOR_NATIVE_OBJECTS) {
             this._am.retain();
         }
-
-
-
-
 
         this._am.setVerifyCallback(function(path, asset) {
 
@@ -104,7 +97,6 @@ cc.Class({
         }
 
         if (mmm == 1) {
-
             this._updateListener = new jsb.EventListenerAssetsManager(this._am, this.updateCb.bind(this));
 
         } else {
@@ -113,25 +105,19 @@ cc.Class({
 
         }
 
-
         cc.eventManager.addListener(this._updateListener, 1);
-
 
         if (this._am.getState() === jsb.AssetsManager.State.UNINITED) {
 
 
             if (jsb.fileUtils.isFileExist(filees)) {
-
                 this._am.loadLocalManifest(this.manifestUrl);
-
             } else {
-
                 var manifest = new jsb.Manifest(customManifestStr, this._storagePath);
                 this._am.loadLocalManifest(manifest, this._storagePath);
             }
 
         }
-
 
         if (mmm == 1) {
 
@@ -149,35 +135,23 @@ cc.Class({
     },
 
     updateCb: function(event) {
-
-
-
         //console.log( "升级执行:"+event.getEventCode()  );
 
         switch (event.getEventCode()) {
             case jsb.EventAssetsManager.ERROR_NO_LOCAL_MANIFEST:
-
                 /*0 本地没有配置文件*/
-
-
                 break;
 
             case jsb.EventAssetsManager.ERROR_DOWNLOAD_MANIFEST:
                 /*1下载配置文件错误*/
-
-
                 break;
 
             case jsb.EventAssetsManager.ERROR_PARSE_MANIFEST:
                 /*2 解析文件错误*/
-
                 break;
 
             case jsb.EventAssetsManager.NEW_VERSION_FOUND:
                 /*3发现新的更新*/
-
-
-
 
                 break;
 
@@ -188,14 +162,7 @@ cc.Class({
 
             case jsb.EventAssetsManager.UPDATE_PROGRESSION:
                 /*5 最新进展  做 进度的*/
-
-
                 cc.find("Canvas/label").getComponent(cc.Label).string = event.getPercentByFile();
-
-
-
-
-
                 break;
 
 
