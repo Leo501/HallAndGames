@@ -9,6 +9,7 @@ https://forum.cocos.com/t/require-setting-js/68351
 
 2.x参考文章
 https://forum.cocos.com/t/creator-2-0-7/73381
+有问题可以加群：822735145
 
 步骤
 * 修改hall与subgame中远程热更新地址
