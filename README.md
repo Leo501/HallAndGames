@@ -1,5 +1,6 @@
 # HallAndGames
-大厅+子游戏
+
+#大厅+子游戏模式
 
 1.x参考文章
 http://forum.cocos.com/t/topic/53115
@@ -18,3 +19,12 @@ https://forum.cocos.com/t/creator-2-0-7/73381
 * 复制两个文件后。开始到subgame目录下。使用version_generator.js 生成热更新文件
 * 生成热更新文件后。进入build\jsb-link or build\jsb-default。把目录res与src 跟文件peision.manifest还有version.manifest放到远程目录。
 * 用Cocos Creator打开工程hall 点击构建发布生成apk。就可以测试了 
+
+# 分包模式
+### 分离出大厅和子游戏的资源并分离
+* 参考文章
+https://forum.cocos.org/t/topic/74339
+
+### assets-bundle插件基于官方的分包策略。
+* 参考文章
+https://forum.cocos.org/t/cocoscreator-assetsbundle/88349
