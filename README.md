@@ -24,7 +24,9 @@ https://forum.cocos.com/t/creator-2-0-7/73381
 ### 分离出大厅和子游戏的资源并分离
 * 参考文章
 https://forum.cocos.org/t/topic/74339
+github https://github.com/zPiggy/subpackage-tools
 
 ### assets-bundle插件基于官方的分包策略。
 * 参考文章
 https://forum.cocos.org/t/cocoscreator-assetsbundle/88349
+github https://github.com/zPiggy/assets-bundle
